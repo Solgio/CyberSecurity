@@ -3,7 +3,7 @@ s="MKXU IDKMI DM BDASKMI NLU XCPJNDICFQ! K VDMGUC KW PDT GKG NLKB HP LFMG DC TBU
 
 t = "" 
 
-file_uno = open("C:\\Users\\loren\\OneDrive\\Desktop\\Uni\\2° anno\\CyberSecurity\\Es\\Challenges 3\\3_alphabet_soup\\Senza titolo.txt", "w")
+file_uno = open("C:\\Users\\loren\\OneDrive\\Desktop\\Uni\\II_anno\\CyberSecurity\\Es\\Challenges_3\\3_alphabet_soup\\Senza titolo.txt", "w")
 
 t = s.replace("D","O")
 file_uno.write(t+"\n\n")
