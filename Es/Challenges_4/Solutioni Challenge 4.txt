@@ -1,0 +1,20 @@
+1) 365d38c60c4e98ca5ca6dbc02d396e53 ==> md5Cracker ==> password12345
+    (With password salting, a random piece of data is added to the password before it runs through the hashing algorithm,
+     making it unique and harder to crack. When using both hashing and salting, even if two users choose the same password,
+     salting adds random characters to each password when the users enter them.)
+
+2) bin(plain_text)^bin(decodeb64(encrypted_pl_text))=key
+   bin(decode(encrypted_flag))^key=flag
+
+3) Same dimention for current time and the 0x88 standard  (reverse XOR between standard time dimension and the final section of message of the same lenght) 
+                           ||
+                           ||
+      Plain time used for the seed of random number
+                           ||
+                           ||
+      Once i have the key I can get the plain text easy (reverse XOR)
+                           ||
+                           ||
+            34C3_otp_top_pto_pot_tpo_opt_wh0_car3s
+
+4) 
