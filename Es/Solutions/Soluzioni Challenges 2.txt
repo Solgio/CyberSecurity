@@ -23,15 +23,15 @@
    01001100 01010011 01000001 01110100 01001001 01000011 00110000 01110101 01001100 01101001 
    00110000 01100111 01001100 01010001 00111101 00111101
                               ||
-                              ||Binary
+                              ||Binary to Ascii
                               ||
 Li0gLi0uLiAuIC0uLi0gLS4tLiAtIC4uLS4gLSAuLi4uIC4tLS0tIC4uLi4uIC0tLSAuLS0tLSAuLi4gLS0tIC4uLi4u
 IC4uLSAuLS0uIC4uLi0tIC4tLiAtLS0gLi4uLi4gLiAtLi0uIC4tLiAuLi4tLSAtIC0tLSAtIC0uLi0gLQ==
                               ||
-                              ||Base64
+                              ||Base64 to Morse
                               ||
 .- .-.. . -..- -.-. - ..-. - .... .---- ..... --- .---- ... --- ..... ..- .--. ...-- .-. --- ..... . -.-. .-. ...-- - --- - -..- -
                               ||
-                              ||Morse
+                              ||Morse to Text
                               ||
 		         ALEXCTFTH15O1SO5UP3RO5ECR3TOTXT

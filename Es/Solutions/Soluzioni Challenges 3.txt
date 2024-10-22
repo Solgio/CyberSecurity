@@ -1,6 +1,6 @@
 1) fYZ7ipGIjFtsXpNLbHdPbXdaam1PS1c5lQ==
                 ||
-                ||Base64
+                ||Base64 to Ascii
                 ||
         }{[l^KlwOmwZjmOKW9
                 ||
