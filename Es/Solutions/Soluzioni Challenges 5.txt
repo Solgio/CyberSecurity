@@ -1,5 +1,5 @@
 1)	Wireshark ==> (search in the search bar) bashninja ==> Credentials: bashNinja:flag{help-me-obiwan}
 
-2)
+2) 0xdeadbeef is a valid IpV6 address and valid base16 code
 
 3)
