@@ -30,6 +30,17 @@ def dec2ascii(text):
 def ascii2dec(text):
     return [ord(x) for x in text]
 
+
+def MD5inRange():
+    import hashlib
+    for i in range(100):
+        """ compute the MD5 """
+        #convert the number to a byte
+        byte_i = str.encode(str(i))
+
+        #obtain the MD5
+        md5_i = hashlib.md5(byte_i).hexdigest()
+
 #TESTING AREA
 
 #Test hex2dec

@@ -18,4 +18,4 @@ def frequency(text):
             all_freq[i] = 1
  
     # printing result
-    print("Count of all characters in GeeksforGeeks is :\n "+ str(all_freq))
+    print("Count of all characters in text is :\n "+ str(all_freq))
