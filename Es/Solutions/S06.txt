@@ -1,0 +1,8 @@
+1. Prova un qualsiasi User, il response della Query (In Network) 	
+   darà "MrCLear"--> Stessa cosa sulla Password ma con nome 
+   utente "MrCLear"-->flag{hj38dsjk324nkeasd9}
+   
+ 2. Da console e guardando il codice, la funzione getThat() che serve per la Flag, invoco la funzione getThat('Y') e ottengo--	-
+ ----------------->flag{console_controls_js} 
+ 
+ 3. 
