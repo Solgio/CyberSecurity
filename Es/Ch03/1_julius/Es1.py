@@ -1,7 +1,7 @@
 s="}{[l^KlwOmwZjmOKW9"
 t = "" 
 
-file_uno = open("C:\\Users\\loren\\OneDrive\\Desktop\\Uni\\II_anno\\CyberSecurity\\Es\\Challenges_3\\1_julius\\Senza titolo.txt", "w")
+file_uno = open("C:\\Users\\loren\\OneDrive\\Desktop\\Uni\\II_anno\\CyberSecurity\\Es\\Ch03\\1_julius\\Senza titolo.txt", "w")
 
 for i in range (128):
     for s_elements in s:

@@ -4,7 +4,7 @@
 #the file is in hex encoded, it could be good to bring it in a proper form
 #we know that FF is 256, i.e., we can represent the text in a decimal format,
 #where each number can be encoded in ascii
-with open("C:\\Users\\loren\\OneDrive\\Desktop\\Uni\\II_anno\\CyberSecurity\\Es\\Challenges_4\\4_repeated_xor\\encrypted.txt", 'r') as file:
+with open("/home/solgio/Desktop/CyberSecurity/Es/Ch04/4_repeated_xor/encrypted.txt", 'r') as file:
     secret_hex = file.read()
 
 def hex2dec(text):
@@ -50,8 +50,7 @@ def splitter(text, key_length):
 
 secret_ = splitter(secret, 8)
 
-#we need to define a method that show us the k-th most frequent character in
-#a given string
+#we need to define a method that show us the k-th most frequent character in a given string
 from collections import Counter
 def k_char(text, k):
     #use the counter
@@ -63,23 +62,23 @@ def k_char(text, k):
     return ordered[k][0]
 
 ## we can now see the top N freuqent words
-# print(k_char(secret, 0))
+#print(k_char(secret, 0))
 
 #we now work on the Cryptoanalysis, based on each column of the matrix M[secret//8 X 8]
 #we can first assume that the most common character in each column is the space ' '.
 key_sec = [k_char(secret_[0], 0), k_char(secret_[1], 0), k_char(secret_[2], 0), k_char(secret_[3], 0),
     k_char(secret_[4], 0), k_char(secret_[5], 0), k_char(secret_[6], 0), k_char(secret_[7], 0)]
 
-print(key_sec)
+print("key_sec",key_sec)
 #xor the key
 real_key = [k ^ ord(' ') for k in key_sec]
-print(real_key)
+print("key_real",real_key)
 #decode the secret
 real_message = ''
 for i, c in enumerate(secret):
     key_pos = i % 8
     real_message+= chr(c ^ real_key[key_pos])
 
-print(real_message)
+#print(real_message)
 
 #your flag is: 8eb31c92334eac8f6dacfbaaa5e40294a31e66e0
