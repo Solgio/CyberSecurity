@@ -1,2 +1,10 @@
-IADD:00000001:/dontdebugmeplease_Crack
-IDSET:/dontdebugmeplease_Crack:7f011921b7674454192071
+IDEL:/debugmenot_CRACK
+IADD:00000003:/debugmenot_CRACK
+IDSET:/debugmenot_CRACK:7f01189319384217592934
+IMV:/debugmenot:/debugmenotOLD
+IADD:00000004:/debugmenot
+IDSET:/debugmenot:7f011afad9704764250180
+IDEL:/debugmenot
+IDEL:/debugmenotOLD
+IADD:00000005:/debugmenot
+IDSET:/debugmenot:7f011815d10028469367238

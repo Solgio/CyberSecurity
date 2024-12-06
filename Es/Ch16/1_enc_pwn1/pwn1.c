@@ -6,7 +6,7 @@ void shell(){
 }
 
 int main(){
-	char buffer[128];
+	char buffer[128];                     //ENTRANCE FOR BUFFER OVERFLOW
 	setvbuf(stdout, NULL, _IONBF, 0);
 	printf("Tell me your name: ");
 	gets(buffer);
