@@ -1,0 +1,37 @@
+IMPORTANT R2 COMMANDS:
+
+    - iz      --> Prints strings in File
+    - pdf @ function_name   --> Prints assembly code of Function
+    - aaaaa   --> Start inspection
+    - afl     --> Returns addresses of all functions in file
+    - iS      -->Inspect sections of File, teling if readable, writeable or both
+    - px number_of_bytes   --> Returns the content of size "number_of_bytes" in the current address
+    -
+
+IMPORTANT BASH COMMANDS
+    - ROPgadget --banary=file | grep "register or assembly command"             -->Returns matching ROPgadget
+    - checksec --file=filename   -->Return security characteristics of the file
+    - file filename         -->Returns file type and general infos
+    - python3 name_py_programm.py      -->Runs python code 
+    - 
+
+
+IMPORTANT PEDA COMMANDS
+    - p function                  -->Print function 
+    - pattern_create   size   pattern_name    -->Creates an cyclic input (pattern) of size, saved as pattern_name
+    - run > pattern_name        -->Insert the pattern in input
+    - pattern_search pattern_name   -->Searches pattern and returns useful offesets
+    - disass function_name_or_address       -->Disassembles the given Function
+
+
+IMPORTANT PWN-PYTHON COMMANDS
+    - io = process("file_path")     -->Process instance to send file to(Dynamic)
+    - io.recvuntil("symbol")        -->Recive file until symbol
+    - io.sendline(payload)      -->Send in Input payload variable
+    - print(io.recvall())       -->Prints the return values of Programm
+    - io.interactive()          -->Activates Interactive mode
+    - context.binary='path'     -->Infos and Setup of binary
+    - elf = context.binary      -->Creates a copy of binary(Static)
+    - x = elf.symbols['function']      -->Saves in x the address value of function
+    - y = elf.got['function']       -->Saves in y the got address of function
+    - elf.address = main - elf.symbols['main']         -->Fixes the address of elf in case of a PIE protection (Random padding)
