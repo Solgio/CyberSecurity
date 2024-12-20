@@ -12,6 +12,7 @@ IMPORTANT BASH COMMANDS
     - checksec --file=filename   -->Return security characteristics of the file
     - file filename         -->Returns file type and general infos
     - python3 name_py_programm.py      -->Runs python code 
+    - strings filename          -->Returns Strings in Filename
 
 
 IMPORTANT PEDA COMMANDS
