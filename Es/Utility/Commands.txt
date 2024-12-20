@@ -36,6 +36,7 @@ IMPORTANT PWN-PYTHON COMMANDS
     - y = elf.got['function']       -->Saves in y the got address of function
     - elf.address = main - elf.symbols['main']         -->Fixes the address of elf in case of a PIE protection (Random padding)
     - io.pack(payload)         -->Send payload
+    (If stack is not aligned a simple ret gadget is the solution)
 
     Cyclic in python
     - io.sendline(cyclic(500))
