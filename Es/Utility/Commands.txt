@@ -38,6 +38,15 @@ IMPORTANT PWN-PYTHON COMMANDS
     - elf.address = main - elf.symbols['main']         -->Fixes the address of elf in case of a PIE protection (Random padding)
     - io.pack(payload)         -->Send payload
 
+    Cyclic in python
+    - io.sendline(cyclic(500))
+    - io.wait()
+    - core = io.corefile
+    - stack = core.rsp
+    - info(“rsp = %#x”, stack)
+    - pattern = core.read(stack, 4)
+    - rip_offset = cyclic_find(pattern)info(“rip offset is %d”, rip_offset)
+
 
 REGISTER INDEX
 
