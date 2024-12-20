@@ -1,19 +1,17 @@
 IMPORTANT R2 COMMANDS:
-
     - iz      --> Prints strings in File
     - pdf @ function_name   --> Prints assembly code of Function
     - aaaaa   --> Start inspection
     - afl     --> Returns addresses of all functions in file
     - iS      -->Inspect sections of File, teling if readable, writeable or both
     - px number_of_bytes   --> Returns the content of size "number_of_bytes" in the current address
-    -
+    
 
 IMPORTANT BASH COMMANDS
     - ROPgadget --banary file | grep "register or assembly command"             -->Returns matching ROPgadget
     - checksec --file=filename   -->Return security characteristics of the file
     - file filename         -->Returns file type and general infos
     - python3 name_py_programm.py      -->Runs python code 
-    - 
 
 
 IMPORTANT PEDA COMMANDS
@@ -23,6 +21,7 @@ IMPORTANT PEDA COMMANDS
     - pattern_search pattern_name   -->Searches pattern and returns useful offesets
     - disass function_name_or_address       -->Disassembles the given Function
     - printf "%s", (char*) buffer_name      -->Returns string in buffer_name
+
 
 IMPORTANT PWN-PYTHON COMMANDS
     - io = process("file_path")     -->Process instance to send file to(Dynamic)
@@ -49,7 +48,6 @@ IMPORTANT PWN-PYTHON COMMANDS
 
 
 REGISTER INDEX
-
 The 64-bit versions of the 'original' x86 registers are named:
 
     rax - register a extended
